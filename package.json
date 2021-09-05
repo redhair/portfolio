@@ -13,18 +13,24 @@
     "gatsby-plugin-manifest": "^3.7.1",
     "gatsby-plugin-offline": "^4.7.1",
     "gatsby-plugin-postcss": "^4.7.1",
+    "gatsby-plugin-preact": "^5.13.0",
     "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.7.1",
     "gatsby-plugin-sharp": "^3.7.1",
     "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "postcss": "^8.3.4",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "ghooks": "^2.0.4",
     "prettier": "^2.3.1",
     "tailwindcss": "^2.1.4"
   },
@@ -47,5 +53,13 @@
   },
   "bugs": {
     "url": "https://github.com/kosvrouvas/gatsby-tailwindcss-starter/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run build"
+    }
   }
 }
