@@ -1,5 +1,9 @@
 @tailwind base;
 
+body {
+  background: black;
+}
+
 h1 {
   @apply text-2xl;
 }
@@ -15,3 +19,10 @@ a {
 
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: Proxima Nova;
+    font-display: swap;
+  } */
+}

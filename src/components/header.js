@@ -1,21 +1,57 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import { DiGithubAlt } from "react-icons/di"
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <nav className="z-20 flex flex-wrap items-center justify-between py-6 mb-6 sticky top-0 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-xl font-semibold tracking-tight">
-          {siteTitle}
-        </span>
+        <div>
+          <Link
+            to={`/`}
+            href="#responsive-header"
+            className="font-mono text-matrix text-4xl font-bold"
+          >
+            {/* <StaticImage loading="eager" src="../images/logo.png" alt="Logo" />
+             */}
+            bonanni.dev
+          </Link>
+        </div>
+      </div>
+
+      <div
+        className={`${
+          isExpanded ? `flex` : `hidden`
+        } w-full block flex-grow lg:flex items-center justify-end lg:w-auto`}
+      >
+        <Link
+          to={`/blog`}
+          className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
+        >
+          Blog
+        </Link>
+        <Link
+          className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
+          to="/about"
+        >
+          About
+        </Link>
+        <a
+          href="https://github.com/redhair"
+          target="_blank"
+          className="block text-2xl font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
+        >
+          <DiGithubAlt />
+        </a>
       </div>
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 text-matrix border border-transparent rounded"
         >
           <svg
             className="w-3 h-3 fill-current"
@@ -23,38 +59,9 @@ function Header({ siteTitle }) {
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0v-2z" />
           </svg>
         </button>
-      </div>
-      <div
-        className={`${
-          isExpanded ? `block` : `hidden`
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
-      >
-        <div className="text-sm lg:flex-grow">
-          <Link
-            to={`/`}
-            href="#responsive-header"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            Home
-          </Link>
-          <Link
-            to={`/page-2`}
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            page 2
-          </Link>
-        </div>
-        <div>
-          <a
-            href="#download"
-            className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
-          >
-            Download
-          </a>
-        </div>
       </div>
     </nav>
   )
