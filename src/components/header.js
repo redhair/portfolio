@@ -29,12 +29,6 @@ function Header({ siteTitle }) {
         } w-full block flex-grow lg:flex items-center justify-end lg:w-auto`}
       >
         <Link
-          to={`/blog`}
-          className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
-        >
-          Blog
-        </Link>
-        <Link
           className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
           to="/about"
         >
