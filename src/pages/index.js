@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
       />
       <ProjectCard
         title="gatsby-web3-starter"
-        description="Audit any website for WCAG compliance"
+        description="Easily build blockchain enabled websites and apps"
         link="/gatsby-web3-starter"
         color="green"
         tags={["gatsby", "webpack5", "web3"]}
