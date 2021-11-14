@@ -28,7 +28,7 @@ function Header({ siteTitle }) {
         } w-full block flex-grow lg:flex order-1 items-center justify-start md:justify-end lg:w-auto`}
       >
         <Link
-          className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
+          className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-transparent rounded hover:border-matrix"
           to="/about"
         >
           About
@@ -36,7 +36,7 @@ function Header({ siteTitle }) {
         <a
           href="https://github.com/redhair"
           target="_blank"
-          className="block text-2xl font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"
+          className="block text-2xl font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-transparent rounded hover:border-matrix"
         >
           <DiGithubAlt />
         </a>
