@@ -27,7 +27,7 @@ function ProjectCard({ title, color, description, link, tags = [] }) {
     <Link class="flex" to={link}>
       <div
         className={
-          "relative border-matrix border overflow-hidden mb-2 mr-2 flex flex-grow flex-col p-6 rounded-lg"
+          "relative border-matrix border-2 overflow-hidden mb-2 mr-2 flex flex-grow flex-col p-6 rounded-lg"
         }
       >
         <h3 class="text-matrix font-mono font-bold mb-4 text-xl z-10">
