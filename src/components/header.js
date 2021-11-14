@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { DiGithubAlt } from "react-icons/di"
 
 function Header({ siteTitle }) {
@@ -14,7 +13,7 @@ function Header({ siteTitle }) {
           <Link
             to={`/`}
             href="#responsive-header"
-            className="font-mono text-matrix text-4xl font-bold"
+            className="font-mono text-matrix sm:text-4xl text-3xl font-bold"
           >
             {/* <StaticImage loading="eager" src="../images/logo.png" alt="Logo" />
              */}
@@ -26,7 +25,7 @@ function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `flex` : `hidden`
-        } w-full block flex-grow lg:flex items-center justify-end lg:w-auto`}
+        } w-full block flex-grow lg:flex order-1 items-center justify-start md:justify-end lg:w-auto`}
       >
         <Link
           className="block font-bold mt-4 mr-4 text-matrix font-mono border p-2 lg:inline-block lg:mt-0 hover:text-matrix border-black rounded hover:border-matrix"

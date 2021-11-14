@@ -51,9 +51,6 @@ const Layout = ({ children }) => {
               Home
             </Link>
             <Link class="text-matrix font-mono" to="/">
-              Blog
-            </Link>
-            <Link class="text-matrix font-mono" to="/">
               About
             </Link>
             <a class="text-matrix font-mono" href="https://github.com/redhair">

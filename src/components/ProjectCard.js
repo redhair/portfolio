@@ -34,26 +34,21 @@ function ProjectCard({ title, color, description, link, tags = [] }) {
           {title}
         </h3>
         <p class="text-matrix font-mono z-10">{description}</p>
-        <div class="flex mt-4 flex-wrap flex-grow-0	 z-10">
+        <div class="flex mt-4 flex-wrap flex-grow-0	z-10">
           {tags.map(t => (
-            <div
-              class={
-                "rounded-full flex px-3 py-1 mr-2 mb-2 bg-white bg-opacity-20"
-              }
-            >
-              <span class="text-matrix font-mono flex-wrap text-sm whitespace-nowrap">
-                {t}
-              </span>
+            <div className="px-4 py-2 text-sm rounded-full mr-2 mb-2 bg-green-900 text-matrix font-bold font-mono">
+              {t}
             </div>
           ))}
         </div>
-        <StaticImage
-          loading="eager"
-          src="../images/green_holo_texture_2.png"
-          alt="Texture"
-          placeholder="blurred"
-          className="absolute top-0 left-0 z-0"
-        />
+        <div className="absolute top-0 left-0 z-0" style={{ margin: -15 }}>
+          <StaticImage
+            loading="eager"
+            src="../images/green_holo_texture_2.png"
+            alt="Texture"
+            placeholder="blurred"
+          />
+        </div>
       </div>
     </Link>
   )

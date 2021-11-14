@@ -19,10 +19,10 @@ const IndexPage = ({ data }) => (
     <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2 mt-4">
       <ProjectCard
         title="ethersplit"
-        description="A basic application for tracking your ERC-20 tokens"
+        description="NFT minting website built with Gatsby + Web3"
         link="/ethersplit"
         color="green"
-        tags={["ethereum", "react", "tailwindcss"]}
+        tags={["gatsby", "web3", "tailwindcss"]}
       />
       <ProjectCard
         title="afito-ui"
@@ -36,14 +36,14 @@ const IndexPage = ({ data }) => (
         description="Curate your mailing list"
         link="/mailr"
         color="green"
-        tags={["react", "NEXT.js", "mongodb", "chart.js"]}
+        tags={["react", "next.js", "mongodb", "chart.js"]}
       />
       <ProjectCard
         title="gatsby-web3-starter"
         description="Audit any website for WCAG compliance"
         link="/gatsby-web3-starter"
         color="green"
-        tags={["node.js", "lighthouse"]}
+        tags={["gatsby", "webpack5", "web3"]}
       />
     </div>
     <h2 class="mt-12 mb-2 font-bold text-matrix font-mono text-base">
