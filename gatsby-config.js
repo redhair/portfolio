@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Tom Bonanni`,
-    // description: `Kick off your next, great Gatsby project with this default starter with TailwindCSS and common dev tools. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@tombonanni`,
+    title: `bonanni.dev`,
+    author: `@redhair`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
