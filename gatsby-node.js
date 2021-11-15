@@ -21,7 +21,7 @@ const projects = [
     github: "https://github.com/afito-com/afito-ui",
     website: "https://afito-ui.netlify.app/",
     description:
-      "A React UI library made for https://afito.com. This library supports tree shaking and code splitting resulting in optimal performance across frameworks. This library can be installed via npm and follows semantic versioning and conventional commits. You can install the latest verison by typing in `npm i afito-ui`. This library contains all afito components used accross the entire afito ecosystem. It contains everything from primitive components like buttons to complex, fully custom, stripe-based payment funnels.",
+      "A React UI library made for https://afito.com. This library supports tree shaking and code splitting resulting in optimal performance regardless of how large the library grows. This library can be installed via npm and follows semantic versioning and conventional commits. You can install the latest verison by typing in `npm i afito-ui`. This library contains all afito components used accross the entire afito ecosystem. It contains everything from primitive components like buttons to complex, fully custom, stripe-based payment funnels.",
     techStack: [
       "react",
       "rollup",
@@ -55,7 +55,8 @@ const projects = [
   },
   {
     name: "gatsby-web3-starter",
-    github: "",
+    github: "https://github.com/redhair/gatsby-web3-starter",
+    website: "https://redhair.github.io/gatsby-web3-starter/",
     description:
       "A template repository for the purpose of quickly creating a blockchain enabled website. This starter utilizes Webpack 5 and Gatsby 4, and gatsby-plugin-image for maximum performance.",
     techStack: ["gatsby", "web3", "react", "webpack5", "tailwindcss"],

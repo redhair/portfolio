@@ -11,7 +11,7 @@ function ProjectPage(props) {
   const project = props.pageContext.project
   const prevProject = props.pageContext.prevProject
   const nextProject = props.pageContext.nextProject
-  console.log({ prevProject, nextProject })
+
   return (
     <Layout>
       <div className="">
