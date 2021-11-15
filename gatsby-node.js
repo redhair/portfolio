@@ -21,7 +21,7 @@ const projects = [
     github: "https://github.com/afito-com/afito-ui",
     website: "https://afito-ui.netlify.app/",
     description:
-      "A React UI library made for https://afito.com. This library supports tree shaking and code splitting resulting in optimal performance regardless of how large the library grows. This library can be installed via npm and follows semantic versioning and conventional commits. You can install the latest verison by typing in `npm i afito-ui`. This library contains all afito components used accross the entire afito ecosystem. It contains everything from primitive components like buttons to complex, fully custom, stripe-based payment funnels.",
+      "A React UI library made for https://afito.com. This library supports tree shaking and code splitting resulting in optimal performance regardless of how large the library grows. This library can be installed via npm and follows semantic versioning and conventional commits. You can install the latest verison by typing in `npm i afito-ui`. This library contains all afito components used across the entire afito ecosystem. It contains everything from primitive components like buttons to complex, fully custom, stripe-based payment funnels.",
     techStack: [
       "react",
       "rollup",
